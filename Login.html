@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+    .All{
+        display: flex;
+        /* border: 1px solid red; */
+        height: 450px;
+        width: 400px;
+        margin: auto;
+        margin-top: 70px;
+        flex-direction: column;
+   
+    }
+    .sigin{
+        margin-top: 40px;
+        margin-left: 15px;
+        margin-bottom: 40px;
+        color: grey;
+        font: bold;
+        font-size: 33px;  
+
+    }
+
+    .Username input{
+        margin-bottom: 25px;
+        margin-left: 30px;
+        outline: none;
+        border-top: 1px black;
+        border-left: none;
+        border-right: none;
+        height: 35px;
+        width: 270px;
+
+    }
+
+    .Username i{
+        position: absolute;
+        left: 37.7%;
+        top:  32%;
+        color: dodgerblue;
+        
+
+    }
+
+    .Username [type=text]{
+        padding-left: 40px;
+        font-size: 18px;
+        
+    }
+
+    .pass:focus{
+    border-bottom:2px solid dodgerblue; 
+    
+
+    
+    }
+
+    .Password input{
+        margin-top: 28px;
+        margin-left: 30px;
+        margin-bottom: 15px;
+        outline: none;
+        border-top:  black;
+        border-left: none;
+        border-right: none;
+        height: 35px;
+        width: 270px;
+    }
+
+    .Password i{
+        position: absolute;
+        left: 37.7%;
+        top:  46%;
+        color: dodgerblue;
+        
+    }
+
+    .Password [type=text]{
+        padding-left: 40px;
+        font-size: 18px;
+        
+    }
+
+    .user:focus{
+    border-bottom:2px solid dodgerblue;  
+
+    }
+
+    .but{
+        background-color: dodgerblue;
+        cursor: pointer;
+        /* outline: none; */
+        border: none;
+        width: 270px;
+        height: 40px;
+        margin-left: 55px;
+        margin-top: 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .forg{
+        margin-left: 15px;
+        margin-top: 65px;
+        cursor: pointer;
+
+    }
+
+    .forg:hover{
+
+        color: blue;
+    }
+
+
+
+    
+    
+    </style>
+</head>
+<body>
+    <div class="All">
+        <p class="sigin">Sign In</p>
+        <div class="Username">
+        <i class='fas fa-user-alt'></i>
+        <input class="user" type="text" placeholder="Username">
+        </div>
+
+        <div class="Password">
+        <i class='fas fa-lock-open'></i>
+        <input class="pass"  type="text" placeholder="Password">
+        </div>
+
+        <input class="but" type="submit" value="Login">
+        <p class="forg">Forgot Password</p>
+
+    </div>
+</body>
+</html>
